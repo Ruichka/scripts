@@ -1,5 +1,5 @@
 class NotScript() {
-  function print(text,tileX,tileY,charX,charY) {
+  function printText(text,tileX,tileY,charX,charY) {
     for (let i=0;i<text.length;i++) {
       charX++;
       if (charX == 16) {
