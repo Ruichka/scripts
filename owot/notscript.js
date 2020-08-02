@@ -6,6 +6,6 @@ function printText(text,tileX,tileY,charX,charY) {
       tileX++
       charX = 0
     }
-    writeCharTo("text[i]",0,tileX,tileY,charX,charY);
+    writeCharTo(text[i],0,tileX,tileY,charX,charY);
   };
 };
