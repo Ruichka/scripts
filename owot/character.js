@@ -1,5 +1,3 @@
-cx = 0
-cy = 0
 function drawCharacter() {
     writeCharToXY("x","#000000",cx,cy)
     writeCharToXY("_","#000000",cx+1,cy)
@@ -28,6 +26,9 @@ function moveCharacter(direction) {
     writeCharToXY(" ","#000000",cx-1,cy)
   }
   drawCharacter()
+  positionX=(cx+1)*-defaultSizes.cellW;
+  positionY=cy*-defaultSizes.cellH;
+  w.redraw();
 }
 
 document.onkeydown = function(e){
